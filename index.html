@@ -4,6 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width , initial-scale=1.0">
     <title>Joseph Bortka</title>
+    <script>
+        // Check if site is hosted on github Pages
+        if (window.location.hostname.endsWith("github.io")){
+            //create a <base> element dynamically
+            const base = document.createElement("base");
+            base.href = "/udemy-html-portfolio/";
+            document.head.appendChild(base);
+        }
+    </script>
 </head>
 <body>
     <h1>Joseph Bortka</h1>
@@ -11,6 +20,6 @@
     <a href="index.html"><button>Home</button></a> <a href="About.html"><button>About</button></a> <a href="cv.html"><button>Resume</button></a> <a href="/Blog/bloghome.html"><button>Blog</button></a>
     <hr/>
 <p>This website is part resume, part blog. I hope you gain as much value from it as I gained learning to make it. Below is myself, my lovely wife Joanna, and our tribe.</p>
-    <img src="Assets/Images/josephandfamily.png" alt="Joseph and his family" style="max-width:100%">
+    <img src="/Assets/Images/josephandfamily.png" alt="Joseph and his family" style="max-width:100%">
 </body>
 </html>
